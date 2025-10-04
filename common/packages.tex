@@ -17,6 +17,10 @@
 
 \usepackage{comment}    % Позволяет убирать блоки текста (добавляет
                         % окружение comment и команду \excludecomment)
+                        
+                        
+                    
+% \usepackage[none]{hyphenat}   % отключение переноса строк
 
 %%% Поля и разметка страницы %%%
 \usepackage{pdflscape}  % Для включения альбомных страниц
@@ -100,6 +104,8 @@
     }{}
 \fi
 
+
+
 %%% Оформление абзацев %%%
 \ifpresentation
 \else
@@ -131,6 +137,7 @@
 \usepackage{icomma}  % Запятая в десятичных дробях
 
 %%% Оптимизация расстановки переносов и длины последней строки абзаца
+
 \IfFileExists{impnattypo.sty}{% проверка установленности пакета impnattypo
     \ifluatex
         \ifnumequal{\value{draft}}{1}{% Черновик
